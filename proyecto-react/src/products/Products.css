@@ -1,0 +1,59 @@
+.releases-container {
+    color: #110f57;
+    background-color: #d9e5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+.releases-title {
+    padding-left: 5em;
+    width: 33em;
+}
+
+.releases-product-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+} 
+
+.realeses-img {
+    width: 20em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.realases-products {
+    padding: 1em 2em;
+}
+
+.realeses-type {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    opacity: 0.5;
+    font-size: .99em;
+    padding: .35em 0;
+}
+
+.realeses-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: .35em 0;
+}
+
+.realeses-price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.99em;
+    padding: .35em 0;
+}
+
+.realeses-installments {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #414dff;
+    font-size: .89em;
+    padding: .35em 0;
+}
