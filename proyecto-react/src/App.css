@@ -1,0 +1,17 @@
+:root{
+    --slight-blue: #bacdff;
+    --medium-blue: #414dff;
+    --main-blue: #1c15ed;
+    --second-blue: #110f57;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--slight-blue);
+    overflow-x: hidden;
+}

@@ -1,11 +1,7 @@
-.releases-container {
-    color: #110f57;
-    background-color: #d9e5ff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100vw;
+body{
+    font-size: 62.5%;
 }
+
 
 .releases-title {
     padding-left: 5em;
@@ -14,13 +10,14 @@
 
 .releases-product-container {
     display: flex;
-    width: 100vw;
+    /* width: 100vw; */
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 } 
 
 .realeses-img {
-    width: 20em;
+    width: 15rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -32,21 +29,22 @@
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     opacity: 0.5;
-    font-size: .99em;
+    font-size: 1rem;
     padding: .35em 0;
+    text-transform: uppercase;
 }
 
 .realeses-name {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.6em;
     padding: .35em 0;
 }
 
 .realeses-price {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 0.99em;
+    font-weight: 600;
+    font-size: .8rem;
     padding: .35em 0;
 }
 

@@ -18,20 +18,18 @@ function Header() {
     <header>
         <nav>
             <ul className='desktop-menu'>
-                <li>Electronics</li>
-                <li>Jewelry</li>
-                <li>Men's clothing</li>
-                <li>Women's clothing</li>
+                <li>Shoes</li>
+                <li>Shirts</li>
+                <li>Trousers</li>
             </ul>
             
             {/* {
 
             mobileMenu &&  */}
             <ul className={`mobile-menu ${mobileMenu && "showMenu"}`}>
-                <li>Electronics</li>
-                <li>Jewelry</li>
-                <li>Men's clothing</li>
-                <li>Women's clothing</li>
+            <li>Shoes</li>
+                <li>Shirts</li>
+                <li>Trousers</li>
             </ul>
             {/* } */}
 

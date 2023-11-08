@@ -9,13 +9,13 @@ header{
     position: absolute;
     top: 0;
     right: 30px;
-    background-color: var(--slight-blue);
     font-family: system-ui;
+    margin-top: 2rem;
 }
 
 .desktop-menu{
     display: flex;
-    gap: 16px;
+    gap: 1.4rem;
 }
 
 li{
@@ -24,6 +24,8 @@ li{
     font-weight: bold;
     transition: color 0.5s;
     color: var(--second-blue);
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 li:hover{
@@ -40,7 +42,7 @@ li:hover{
 }
 
 .mobile-menu{
-    position: absolute;
+    position: fixed;
     right: -1000px;
     top: 50px;
     display: flex;
@@ -48,6 +50,11 @@ li:hover{
     gap: 8px;
     /* transform: translateX(-1000%); */
     transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    width: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    height: auto;
 }
 
 .showMenu{
