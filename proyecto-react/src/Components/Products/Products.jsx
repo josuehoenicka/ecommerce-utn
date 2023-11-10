@@ -1,11 +1,11 @@
 import React from 'react';
 import './Products.css';
 
-import Layout from '../layout-container/Layout';
+
 
 // "https://lavaindumentaria.com.ar/wp-content/uploads/2023/05/Sin-titulo-12.jpg"
 
-function Products({title, imgSrc, price, category, offer}) {
+function Products({title, imgSrc, price, category}) {
   return (
 
       <div className="releases-product-container">
