@@ -8,21 +8,17 @@ body{
     width: 33em;
 }
 
-.releases-product-container {
-    display: flex;
-    /* width: 100vw; */
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-} 
 
 .realeses-img {
-    width: 15rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
 }
 
 .realases-products {
     padding: 1em 2em;
+    cursor: pointer;
 }
 
 .realeses-type {

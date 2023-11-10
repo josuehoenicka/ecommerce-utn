@@ -8,9 +8,10 @@ function Home() {
 
     const fetchData = async ()=>{
         try{
-            const response = await fetch("https://fakestoreapi.com/products");
+            const response = await fetch("https://api.escuelajs.co/api/v1/products");
             const data = await response.json();
             setProducts(data);
+            console.log(data);
         }catch(e){
             console.error(e);
         }
@@ -18,6 +19,7 @@ function Home() {
 
     useEffect(()=>{
         fetchData();
+        console.log(products);
     }, []);
 
   return (
@@ -28,8 +30,8 @@ function Home() {
                     title={product.title}
                     price={product.price}
                     key={product.id}
-                    category={product.category}
-                    imgSrc={product.image}
+                    category={product.category.name}
+                    imgSrc={product.images[0]}
                 />
             )
         )}
