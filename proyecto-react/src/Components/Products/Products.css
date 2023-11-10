@@ -19,6 +19,7 @@ body{
 .realases-products {
     padding: 1em 2em;
     cursor: pointer;
+    position: relative;
 }
 
 .realeses-type {
@@ -50,4 +51,25 @@ body{
     color: #414dff;
     font-size: .89em;
     padding: .35em 0;
+}
+
+.add-icon{
+    background-color: #fff;
+    width: 1.6rem;
+    height: 1.7rem;
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 900;
+    border-radius: 1rem;
+    text-align: center;
+    margin: .3rem;
+    padding: .1rem;
+    right: 1.5rem;
+
+    transition: all .3s;
+}
+
+.add-icon:hover{
+    background-color: rgb(29, 209, 29);
+    color: #fff;
 }
