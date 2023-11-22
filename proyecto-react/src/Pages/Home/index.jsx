@@ -4,6 +4,7 @@ import Products from '../../Components/Products/Products';
 
 import { Context } from '../../Context';
 import { useContext } from 'react';
+import ProductDetail from '../../ProductDetail';
 
 function Home() {
 
@@ -22,6 +23,9 @@ function Home() {
                 />
             )
         )}
+
+        <ProductDetail/>
+
       </Layout>
   )
 }

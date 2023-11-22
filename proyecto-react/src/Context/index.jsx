@@ -26,7 +26,6 @@ function ContextProvider({children}) {
 
     useEffect(()=>{
         fetchData();
-        console.log(products);
     }, []);
 
 

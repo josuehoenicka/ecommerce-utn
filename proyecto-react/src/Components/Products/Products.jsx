@@ -7,21 +7,16 @@ import { Context } from '../../Context';
 import {AiOutlinePlus} from "react-icons/ai"
 
 
-
-// "https://lavaindumentaria.com.ar/wp-content/uploads/2023/05/Sin-titulo-12.jpg"
-
 function Products(data) {
 
-  const {setOpenProductDetail, setProductCard, setOpenCartAside, setOpen} = useContext(Context);
+  const {setOpenProductDetail, setProductCard, setOpenCartAside} = useContext(Context);
 
   const showProduct = (productData)=>{
     setOpenProductDetail(true);
     setProductCard(productData)
     setOpenCartAside(false);
-    setOpen(false)
   }
 
-  console.log({setOpenProductDetail, setProductCard, setOpenCartAside, setOpen});
 
   return (
 
