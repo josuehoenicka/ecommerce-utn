@@ -55,7 +55,9 @@ li:hover{
     padding: 2rem;
     border-radius: 1rem;
     height: auto;
+    z-index: 100;
 }
+
 
 .showMenu{
     right: 20px;
