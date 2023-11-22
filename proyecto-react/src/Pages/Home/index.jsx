@@ -2,28 +2,15 @@ import React, {useState, useEffect} from 'react';
 import Layout from '../../Components/Layout/Layout';
 import Products from '../../Components/Products/Products';
 
+import { Context } from '../../Context';
+import { useContext } from 'react';
+
 function Home() {
 
-    const [products, setProducts] = useState([]);
+    const {products} = useContext(Context);
 
-    const fetchData = async ()=>{
-        try{
-            const response = await fetch("https://api.escuelajs.co/api/v1/products");
-            const data = await response.json();
-            setProducts(data);
-            console.log(data);
-        }catch(e){
-            console.error(e);
-        }
-    }
-
-    useEffect(()=>{
-        fetchData();
-        console.log(products);
-    }, []);
-
+    
   return (
-    <div>
       <Layout>
         {products?.map(product =>(
                 <Products
@@ -36,7 +23,6 @@ function Home() {
             )
         )}
       </Layout>
-    </div>
   )
 }
 
