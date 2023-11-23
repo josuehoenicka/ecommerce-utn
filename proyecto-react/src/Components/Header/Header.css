@@ -13,62 +13,13 @@ header{
     margin-top: 2rem;
 }
 
-.desktop-menu{
-    display: flex;
-    gap: 1.4rem;
-}
 
-li{
-    list-style: none;
+.cart-icon{
+    font-size: 1.3rem;
     cursor: pointer;
-    font-weight: bold;
-    transition: color 0.5s;
-    color: var(--second-blue);
-    font-size: 1rem;
-    text-transform: uppercase;
+    transition: color .3s;
 }
 
-li:hover{
-    color: var(--medium-blue);
-}
-
-.burger-icon{
-    font-size: 22px;
-    position: fixed;
-    right: 30px;
-    top: 20px;
-    cursor: pointer;
-    display: none;
-}
-
-.mobile-menu{
-    position: fixed;
-    right: -1000px;
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    /* transform: translateX(-1000%); */
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
-    width: auto;
-    padding: 2rem;
-    border-radius: 1rem;
-    height: auto;
-    z-index: 100;
-}
-
-
-.showMenu{
-    right: 20px;
-}
-
-@media (max-width: 768px){
-    .desktop-menu{
-        display: none;
-    }
-    .burger-icon{
-        display: block;
-    }
-
+.cart-icon:hover{
+    color: #1c15ed;
 }
