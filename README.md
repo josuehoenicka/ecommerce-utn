@@ -3,6 +3,7 @@
 1. <a href="https://github.com/josuehoenicka" target="_blank">josuehoenicka</a>
 2. <a href="https://github.com/gianprocopio" target="_blank">gianprocopio</a>
 3. <a href="https://github.com/emilioj7795" target="_blank">emilioj7795</a>
+4. <a href="https://github.com/PiensaMcfly" target="_blank">Merino Martin</a>
 
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo
