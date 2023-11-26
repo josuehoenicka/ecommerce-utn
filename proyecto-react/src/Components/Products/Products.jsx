@@ -63,7 +63,7 @@ function Products(data) {
         <div className="realeses-image-container">
           <img
             className="realeses-img"
-            img={data.imgSrc}
+            img={data.images[0]}
             alt={data.title}
           />
         </div>
