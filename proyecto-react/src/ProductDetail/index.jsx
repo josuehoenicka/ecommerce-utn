@@ -8,17 +8,17 @@ import "./index.css"
 function ProductDetail() {
     const {openProductDetail, setOpenProductDetail, productCard} = useContext(Context);
 
-    const showProductDetail = ()=>{
+    const closeProductDetail = ()=>{
         setOpenProductDetail(false)
     }
 
-    console.log(productCard);
+    // console.log(productCard);
   
     if(openProductDetail){
         return (
-            <aside>
+            <aside className={openProductDetail && "open"}>
                 <FaXmark className='x-icon' 
-                onClick={()=> showProductDetail()}
+                onClick={()=> closeProductDetail()}
                 />
                 <h3>Detail</h3>
                 <figure>

@@ -13,6 +13,7 @@ function ContextProvider({children}) {
       const [openCartAside, setOpenCartAside] = useState(false);
       const [openNotification, setOpenNotification] = useState(false);
 
+
       const fetchData = async ()=>{
         try{
             const response = await fetch("https://api.escuelajs.co/api/v1/products");

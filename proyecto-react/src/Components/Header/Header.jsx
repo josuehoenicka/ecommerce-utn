@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import "./Header.css";
 
 import { FaCartShopping } from "react-icons/fa6";
 
-import { GiHamburgerMenu } from "react-icons/gi"
+
+import { Context } from '../../Context';
 
 
 // const showMobileMenu = () => {
@@ -14,10 +15,22 @@ import { GiHamburgerMenu } from "react-icons/gi"
 
 function Header() {
 
+  const {cartProducts, setCartProducts, openCartAside, setOpenCartAside, setOpenProductDetail,counter} = useContext(Context);
+
+  const showCart = ()=>{
+    if(openCartAside){
+      setOpenCartAside(false);
+    }else{
+      setOpenCartAside(true);
+    }
+
+    setOpenProductDetail(false)
+  }
 
   return (
     <header>
-        <FaCartShopping className='cart-icon'/>
+        <FaCartShopping className='cart-icon' onClick={() => showCart()}/>
+        <p className='counter'>{counter}</p>
     </header>
   )
 }

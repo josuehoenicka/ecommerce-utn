@@ -7,12 +7,15 @@ import './App.css'
 
 import ContextProvider from '../../Context';
 
+import Cart from '../../Components/Cart';
+
 function App() {
 
   return (
     <ContextProvider>
       <Header />
       <Home />
+      <Cart />
     </ContextProvider>
       
 

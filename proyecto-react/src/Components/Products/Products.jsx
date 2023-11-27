@@ -9,7 +9,7 @@ import {AiOutlinePlus} from "react-icons/ai"
 
 function Products(data) {
 
-  const {setOpenProductDetail, setProductCard, setOpenCartAside} = useContext(Context);
+  const {setOpenProductDetail, setProductCard, setOpenCartAside, counter, setCounter, setOpenNotification, cartProducts, setCartProducts, productCard} = useContext(Context);
 
   const showProduct = (productData)=>{
     setOpenProductDetail(true);
@@ -17,12 +17,22 @@ function Products(data) {
     setOpenCartAside(false);
   }
 
+  const addToCart = (e, productData) => {
+    e.stopPropagation();
+    setCounter(counter + 1);
+    setCartProducts([...cartProducts, productData])
+
+
+    console.log(cartProducts);
+    console.log(productData);
+  }
+
 
   return (
 
       <div className="releases-product-container" onClick={()=> showProduct(data)}>
         <div className="realases-products">
-          <AiOutlinePlus className='add-icon'/>
+          <AiOutlinePlus className='add-icon' onClick={(e) => addToCart(e, data)}/>
           <div className="realeses-image-container">
             <img className="realeses-img" src={data.imgSrc} alt={data.title}/>
           </div>

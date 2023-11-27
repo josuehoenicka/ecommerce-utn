@@ -10,7 +10,6 @@ function Home() {
 
     const {products} = useContext(Context);
 
-    
   return (
       <Layout>
         {products?.map(product =>(
@@ -20,6 +19,7 @@ function Home() {
                     key={product.id}
                     category={product.category.name}
                     imgSrc={product.images[0]}
+                    id={product.id}
                 />
             )
         )}
