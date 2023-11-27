@@ -8,20 +8,9 @@ import { Context } from "../../Context";
 import { AiOutlinePlus } from "react-icons/ai";
 
 function Products(data) {
-  const {
-    setOpenProductDetail,
-    setProductCard,
-    setOpenCartAside,
-    cart,
-    setCart,
-  } = useContext(Context);
 
-<<<<<<< HEAD
+
   const {setOpenProductDetail, setProductCard, setOpenCartAside, counter, setCounter, setOpenNotification, cartProducts, setCartProducts, productCard} = useContext(Context);
-=======
-  const isInCartInitially = cart.some((item) => item.id == data.id);
-  const [isInCart, setIsInCart] = useState(isInCartInitially);
->>>>>>> c083e289a718624aab25031c5ec62edd8a015f58
 
   useEffect(() => {
     setIsInCart(cart.some((item) => item.id == data.id));
@@ -39,7 +28,6 @@ function Products(data) {
     setOpenProductDetail(true);
     setProductCard(productData);
     setOpenCartAside(false);
-<<<<<<< HEAD
   }
 
   const addToCart = (e, productData) => {
@@ -66,47 +54,8 @@ function Products(data) {
             <p className="realeses-name">{data.title}</p>
             <p className="realeses-price">${data.price}</p>
           </div>
-=======
-  };
-
-  return (
-    <div
-      className="releases-product-container"
-      onClick={() => showProduct(data)}
-    >
-      <div className="realases-products">
-        {isInCart ? (
-          <FaTimes
-            className="remove-icon"
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleCart();
-            }}
-          />
-        ) : (
-          <AiOutlinePlus
-            className="add-icon"
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleCart();
-            }}
-          />
-        )}
-        <div className="realeses-image-container">
-          <img
-            className="realeses-img"
-            img={data.images[0]}
-            alt={data.title}
-          />
-        </div>
-        <div className="realeses-description-container">
-          <p className="realeses-type">{data.category}</p>
-          <p className="realeses-name">{data.title}</p>
-          <p className="realeses-price">${data.price}</p>
->>>>>>> c083e289a718624aab25031c5ec62edd8a015f58
         </div>
       </div>
-    </div>
   );
 }
 
